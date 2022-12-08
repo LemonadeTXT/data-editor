@@ -19,9 +19,8 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <ComboBox Grid.Row="0" Grid.Column="0" x:Name="comboboxFonts" Margin="0,0,0,30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="120"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="textblockTest" HorizontalAlignment="Left" FontSize="16" Margin="30,0,0,30" TextWrapping="Wrap" Text="AaBbCc" VerticalAlignment="Bottom"/>
-        <Button Grid.Row="0" Grid.Column="1" Margin="105,0,0,30" x:Name="ButtonTest" Content="Test" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="60" Click="ButtonTest_Click"/>
+        <ComboBox Grid.Row="0" Grid.Column="0" x:Name="comboboxFonts" Margin="0,0,0,30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="120" SelectionChanged="comboboxFonts_SelectionChanged"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="textblockTest" HorizontalAlignment="Left" FontSize="16" Margin="30,0,0,30" TextWrapping="Wrap" Text="AaBbCc" VerticalAlignment="Bottom" Height="25" Width="79"/>
         <Button Grid.Row="1" Grid.Column="0" Margin="0,10,10,0" x:Name="ButtonBack" Content="Back" HorizontalAlignment="Right" VerticalAlignment="Top" Width="80" Click="ButtonBack_Click"/>
         <Button Grid.Row="1" Grid.Column="1" Margin="10,10,0,0" x:Name="buttonAccept" Content="Accept" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ButtonAccept_Click"/>
     </Grid>

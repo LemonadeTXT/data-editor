@@ -27,14 +27,6 @@ namespace data_editor.Pages
             GetFonts();
         }
 
-        private void ButtonTest_Click(object sender, RoutedEventArgs e)
-        {
-            if (comboboxFonts.SelectedItem != null)
-            {
-                textblockTest.FontFamily = (FontFamily)comboboxFonts.SelectedItem;
-            }
-        }
-
         private void ButtonAccept_Click(object sender, RoutedEventArgs e)
         {
             var font = comboboxFonts.SelectedItem;
@@ -55,6 +47,14 @@ namespace data_editor.Pages
             foreach (FontFamily font in Fonts.SystemFontFamilies)
             {
                 comboboxFonts.Items.Add(font);
+            }
+        }
+
+        private void comboboxFonts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (comboboxFonts.SelectedItem != null)
+            {
+                textblockTest.FontFamily = (FontFamily)comboboxFonts.SelectedItem;
             }
         }
     }
