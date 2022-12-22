@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:data_editor"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Data Editor" Height="450" Width="800">
+        Title="Data Editor" Height="480" Width="800">
     <Grid>
         <DockPanel>
             <Menu DockPanel.Dock="Top">
@@ -28,6 +28,6 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
-        <Frame x:Name="frame" NavigationUIVisibility="Hidden"></Frame>
+        <Frame x:Name="frame" NavigationUIVisibility="Hidden" Height="400" VerticalAlignment="Bottom"></Frame>
     </Grid>
 </Window>
