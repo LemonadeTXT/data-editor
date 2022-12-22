@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data.SqlClient;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace data_editor.Connection
 {
@@ -26,9 +19,7 @@ namespace data_editor.Connection
             if (!string.IsNullOrEmpty(newConnectionString) &&
                 newConnectionString != ConnectionString)
             {
-                newConnectionString = newConnectionString.TrimStart(' ').TrimEnd(' ');
-
-                File.WriteAllText("Connection.txt", newConnectionString);
+                File.WriteAllText("Connection.txt", newConnectionString.TrimStart(' ').TrimEnd(' '));
             }
         }
     }
