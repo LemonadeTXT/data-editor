@@ -1,0 +1,1 @@
+Data Source=DESKTOP-3M662DL;Initial Catalog=DataEditor;Trusted_Connection=True
